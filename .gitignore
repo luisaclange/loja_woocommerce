@@ -1,0 +1,36 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ambiente PHP
+vendor/
+composer.lock
+
+# WordPress
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-*/        # backups automáticos de plugins
+wp-config.php               # se tiver dados sensíveis, como senhas do banco
+
+# Plugins e temas que não fazem parte do seu código personalizado
+wp-content/plugins/*
+!wp-content/plugins/meu-plugin/         # mantenha apenas os plugins que você criou
+wp-content/themes/*
+!wp-content/themes/meu-tema/           # mantenha apenas o seu tema
+
+# Arquivos de build (se usar ferramentas de build)
+node_modules/
+dist/
+build/
+
+# Outros
+.env
+.env.*
